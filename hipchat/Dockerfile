@@ -1,4 +1,6 @@
-FROM hubot:base
+FROM ktrysmt:hubot-base
+
+LABEL maintainer "ktrysmt"
 
 USER root
 
