@@ -1,12 +1,14 @@
-## Dockerfile for hubot-hipchat
+## Dockerfile for hubot development
+
+Should be fix runtime statement and lib's dependencies.
 
 ## Usage
 
 ### Build 
 
 ```
-docker build -t hubot:base -f base.hubot.Dockerfile .
-docker build -t hubot:hipchat -f hipchat.hubot.Dockerfile .
+docker build -t hubot:base -f base/Dockerfile .
+docker build -t hubot:hipchat -f hipchat/Dockerfile .
 ```
 
 ### Run container
