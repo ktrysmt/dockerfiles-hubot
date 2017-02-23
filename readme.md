@@ -1,6 +1,9 @@
-## Dockerfile for hubot development
+# dockerfiles-hubot
 
-Should be fix runtime statement and lib's dependencies.
+> Dockerfiles for hubot with adapters to easy development. 
+
+## Motivation
+Should be fix runtime statement and dependencies of modules.
 
 ## Usage
 
