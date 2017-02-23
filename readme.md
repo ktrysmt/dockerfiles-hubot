@@ -1,4 +1,4 @@
-# dockerfiles-hubot
+# dockerfile-hubot
 
 > Dockerfiles for hubot with adapters to easy development. 
 
