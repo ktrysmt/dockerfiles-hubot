@@ -1,7 +1,9 @@
 FROM node:6
 
+USER root
+
 RUN apt-get update -y
-RUN apt-get install -y redis-server libexpat1-dev libicu-dev 
+RUN apt-get install -y redis-server 
 RUN npm i -g yo generator-hubot hubot-hipchat
 
 # ENV PORT 9980
