@@ -19,7 +19,8 @@ docker build -t ktrysmt/hubot-hipchat -f hipchat/Dockerfile .
 ```
 docker run -e HUBOT_HIPCHAT_JID="00000_0000000@chat.hipchat.com" \
            -e HUBOT_HIPCHAT_PASSWORD="password" \
-           -e HUBOT_HIPCHAT_ROOMS="98250_development@conf.hipchat.com" \
+           -e HUBOT_HIPCHAT_ROOMS="00000_development@conf.hipchat.com" \
+           -e HUBOT_LOG_LEVEL="debug" \
            -p 9980:9980 -t -d ktrysmt/hubot-hipchat
 ```
 
