@@ -1,4 +1,4 @@
-FROM ktrysmt/hubot-base-nvm
+FROM ktrysmt/nvm
 
 LABEL maintainer "ktrysmt"
 

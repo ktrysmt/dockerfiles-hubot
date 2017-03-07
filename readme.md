@@ -26,8 +26,8 @@ It should be freeze runtime and dependencies of modules for the operational stab
 ### Build 
 
 ```
-docker build -t ktrysmt/hubot-base-nvm --build-arg NODE_VERSION=0.12 -f base-nvm/Dockerfile .
-docker build -t ktrysmt/hubot-hipchat -f hipchat/Dockerfile .
+docker build -t ktrysmt/nvm --build-arg NODE_VERSION=0.12 -f nvm/Dockerfile .
+docker build -t ktrysmt/hubot-hipchat -f hubot-hipchat/Dockerfile .
 ```
 
 ### Run 
