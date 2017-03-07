@@ -1,30 +1,45 @@
 # dockerfile-hubot
 
-> Dockerfiles for hubot with adapters to easy development. 
+> Dockerfiles for hubot with some adapters to easy development. 
 
 ## Motivation
-Should be fix runtime statement and dependencies of modules.
+It should be freeze runtime and dependencies of modules for the operational stability.
 
-## Usage
+## Support adapters
+
+- hipchat
+- slack (soon)
+
+## Requirements
+
+- Docker 
+
+## Usage the `hubot-hipchat` container
+
+### Includes
+
+- nvm
+- nodejs v0.12
+- yo generator-hubot hubot-hipchat
+- redis-server
 
 ### Build 
 
 ```
-docker build -t ktrysmt/hubot-base -f base/Dockerfile .
+docker build -t ktrysmt/hubot-base-nvm --build-arg NODE_VERSION=0.12 -f base-nvm/Dockerfile .
 docker build -t ktrysmt/hubot-hipchat -f hipchat/Dockerfile .
 ```
 
-### Run the `hubot-hipchat` container
+### Run 
 
 ```
 docker run -e HUBOT_HIPCHAT_JID="00000_0000000@chat.hipchat.com" \
-           -e HUBOT_HIPCHAT_PASSWORD="password" \
-           -e HUBOT_HIPCHAT_ROOMS="00000_development@conf.hipchat.com" \
+           -e HUBOT_HIPCHAT_PASSWORD="********" \
            -e HUBOT_LOG_LEVEL="debug" \
-           -p 9980:9980 -t -d ktrysmt/hubot-hipchat
+           -p 5222:5222 -t -d ktrysmt/hubot-hipchat
 ```
 
-### Run the `hubot-slack` container
+## Usage the `hubot-slack` container
 
 WIP.
 
