@@ -1,11 +1,10 @@
 FROM ubuntu:16.04
 
-LABEL maintainer "ktrysmt"
+LABEL maintainer "kotaro.yoshimatsu@gmail.com"
 
 USER root
 
-RUN apt-get update -y
-RUN apt-get install -y git curl 
+RUN apt-get update -y && apt-get install -y git curl 
 RUN useradd -d /home/node -m -s /bin/bash node
 
 USER node

@@ -1,10 +1,10 @@
-FROM ktrysmt/nvm
+FROM ktrysmt/nvm:0.12
 
-LABEL maintainer "ktrysmt"
+LABEL maintainer "kotaro.yoshimatsu@gmail.com"
 
 USER root
 
-RUN apt-get install -y libexpat1-dev libicu-dev redis-server 
+RUN apt-get update -y && apt-get install -y libexpat1-dev libicu-dev redis-server 
 
 USER node
 
